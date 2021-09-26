@@ -20,7 +20,7 @@ jobs:
       # https://github.com/booxmedialtd/ws-action-parse-semver
       - name: Parse version
         id: semver-version
-        uses: booxmedialtd/ws-action-parse-semver@v1.3.1
+        uses: booxmedialtd/ws-action-parse-semver@v1.4.0
         with:
           input_string: ${{ steps.package-version.outputs.current-version}}
 
@@ -30,7 +30,7 @@ jobs:
 
       # https://github.com/marketplace/actions/docker-setup-buildx
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1.5.1
+        uses: docker/setup-buildx-action@v1.6.0
 
       # https://github.com/docker/login-action#docker-hub
       - name: Login to Docker Hub
